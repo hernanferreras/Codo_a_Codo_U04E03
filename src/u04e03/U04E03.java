@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package u04e03;
-
-/**
- *
- * @author hernan
- */
+import java.util.Scanner;
 public class U04E03 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String args[]) {
+      Scanner entrada = new Scanner (System.in);
+      int num1, num2;
+      float division;
+      System.out.print("Ingrese el dividendo: ");
+      num1 = entrada.nextInt();
+      System.out.print("Ingrese el divisor: ");
+      num2 = entrada.nextInt();
+      division = (float) num1/num2;
+      System.out.print("La division de los numeros es igual a; "+division);
     }
-    
 }
